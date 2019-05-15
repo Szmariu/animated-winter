@@ -1,2 +1,2 @@
 # animated-winter
-Webscrapping BoardGameGeek - top n boardgames and individual games. Done on BeautifulSoup and Selenium.
+Webscrapping BoardGameGeek - top 10 000 boardgames. Done on BeautifulSoup and Selenium.
