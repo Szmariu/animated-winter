@@ -34,9 +34,9 @@ The steps are explained below:
   
 4. In the end we came up with 2 interesting results:
   * Does the Ranking of the game depend on it's popularity?
-      **  For the top 100 thankfully no. BoardGameGeek does a good job of representing the good, but more niche titles.
-      **  For the top 10 000, there seem to be a much stronger relationship. It seems that BGG put a stronger emphasis on the         number of votes.
-
+      ** For the top 100 thankfully no. BoardGameGeek does a good job of representing the good, but more niche titles.
+      ** For the top 10 000, there seem to be a much stronger relationship. It seems that BGG put a stronger emphasis on the         number of votes.
+      
   * Does the complexity of the game influence it's rating?
-      **  Turns out that yes, it does. Users seem to prefer more complex games (3 and 4). They particularly dislike the very simple 'party' games (complexity = 1).
+      ** Turns out that yes, it does. Users seem to prefer more complex games (3 and 4). They particularly dislike the very simple 'party' games (complexity = 1).
       
