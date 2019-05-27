@@ -23,18 +23,22 @@ During this scraping process, we had to use both standard webscraping tools whic
 
 The steps are explained below:
 
-1.  First, we did simple scraping of the main page, i.e: title, average rating, geek rating, ranking, number of voters and a link to subpage of each boardgame   
+### 1. Scraping the main list
+First, we did simple scraping of the main page, i.e: title, average rating, geek rating, ranking, number of voters and a link to subpage of each boardgame   
 
 Scrapping the top list was fast because we were able to work using requests.get(). Scrapping the individual board games has proven more difficult. The website uses javascript to dynamically load the important part of the page, so using the simple requests.get() wasn't a success.
 
-2. We've used this links to iterate through the individual boardgames to gather more information and append it to the new data frame. It proved to be a difficult challenge due to the fact that each subpage was generated dynamically using JavaScript  
+### 2. Scraping the individual board games
+We've used this links to iterate through the individual boardgames to gather more information and append it to the new data frame. It proved to be a difficult challenge due to the fact that each subpage was generated dynamically using JavaScript  
 
 To overcome this challenge, we needed to use a emulated browser to execute the JS code. We chose Selenium, because we had some experience with it during the previous semester. Since this process is much slower, we decided to scrap only 100 individual pages. We also didn't want to burden the server. Aldought, since BGG is a very popular website, the additional 1 000 visits probably wouldn’t make a difference anyway.
 
-3. We exported the results to separate files, and proceeded with basic EDA  
+### 3. Data export
+We exported the results to separate files, and proceeded with basic EDA  
 During analysis we've found out that most of the games are of 3 out of 4 difficulty level, and that most of the variables are highly correlated, due to the possession bias (we are more likely to rate and review the boardgame we own, than one we just played once)
   
-4. In the end we came up with 2 interesting results:
+### 4. Basic EDA
+In the end we came up with 2 interesting results:
 Does the Ranking of the game depend on it's popularity?
       - For the top 100 - no. BoardGameGeek does a good job of representing the good, but more niche titles.
       - For the top 10 000, there seem to be a much stronger relationship. It seems that BGG put a stronger emphasis on the         number of votes.
